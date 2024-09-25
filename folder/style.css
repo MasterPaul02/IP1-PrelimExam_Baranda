@@ -1,0 +1,177 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin: 0;
+    background-image: url(../folder/bodybackground.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    font-family: Arial, sans-serif;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.player img {
+    width: 150px;
+    height: 150px;
+    margin: 0 20px;
+}
+
+.container {
+    text-align: center;
+    background-image: url(../folder/bg.jpg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.game {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.player {
+    margin: 0 20px;
+}
+
+.choice-image {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.play-area {
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 100px;
+    text-align: center;
+}
+
+.play {
+    background-color: #007BFF;
+}
+
+.reset {
+    background-color: #FF0000;
+}
+
+button:last-child {
+    margin-bottom: 0;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#gameResult {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .container {
+        width: 100vw;
+        height: 100vh;
+        padding: 15px;
+        background-size: cover;
+    }
+
+    .game {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .player img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .choice-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    button {
+        width: 120px;
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .container {
+        width: 100vw;
+        height: 100vh;
+        padding: 10px;
+        background-size: cover;
+    }
+
+    .game {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .player img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .choice-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    button {
+        width: 100px;
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
